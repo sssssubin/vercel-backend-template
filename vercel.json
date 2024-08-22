@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/todos.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [{ "src": "/api/todos", "dest": "/api/todos.js" }]
+}
