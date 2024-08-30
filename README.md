@@ -1,6 +1,6 @@
 # Vercel Template Backend
 
-이 저장소는 Vercel에 배포된 기본 Express.js 백엔드 템플릿을 포함하고 있습니다. MongoDB와의 연동 및 기본 API 기능을 테스트하기 위한 예제입니다.
+이 프로젝트는 Vercel에 배포된 기본 Express.js 백엔드 템플릿을 포함하고 있습니다. Express를 사용하여 간단한 서버를 설정하고, MongoDB와 연동하여 데이터베이스 작업을 실습할 수 있습니다. 기본적인 API 기능을 구현하여 백엔드 개발의 기초를 학습하고 실습할 수 있는 예제입니다.
 
 ## 📦 프로젝트 구성
 
