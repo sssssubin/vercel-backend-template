@@ -10,54 +10,54 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 // 할 일 스키마 및 모델 정의
-const todoSchema = new mongoose.Schema({
+const testSchema = new mongoose.Schema({
   task: { type: String, required: true },
 });
 
-const Todo = mongoose.model("Todo", todoSchema);
+const Test = mongoose.model("Test", testSchema);
 
 app.use(cors()); // CORS 미들웨어 사용
 app.use(express.json()); // JSON 요청 본문 파싱
 
 // API 핸들러
-app.get("/api/todos", async (req, res) => {
+app.get("/api/tests", async (req, res) => {
   try {
-    const todos = await Todo.find();
-    res.status(200).json(todos);
+    const tests = await Test.find();
+    res.status(200).json(tests);
   } catch (error) {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
-app.post("/api/todos", async (req, res) => {
+app.post("/api/tests", async (req, res) => {
   try {
-    const newTodo = new Todo({ task: req.body.task });
-    await newTodo.save();
-    res.status(201).json(newTodo);
+    const newTest = new Test({ task: req.body.task });
+    await newTest.save();
+    res.status(201).json(newTest);
   } catch (error) {
-    res.status(400).json({ error: "Failed to create todo" });
+    res.status(400).json({ error: "Failed to create Test" });
   }
 });
 
-app.delete("/api/todos", async (req, res) => {
+app.delete("/api/tests", async (req, res) => {
   try {
-    await Todo.findByIdAndDelete(req.query.id);
+    await Test.findByIdAndDelete(req.query.id);
     res.status(204).end();
   } catch (error) {
-    res.status(400).json({ error: "Failed to delete todo" });
+    res.status(400).json({ error: "Failed to delete Test" });
   }
 });
 
-app.put("/api/todos", async (req, res) => {
+app.put("/api/tests", async (req, res) => {
   try {
-    const updatedTodo = await Todo.findByIdAndUpdate(
+    const updatedTest = await Test.findByIdAndUpdate(
       req.query.id,
       { task: req.body.task },
       { new: true }
     );
-    res.status(200).json(updatedTodo);
+    res.status(200).json(updatedTest);
   } catch (error) {
-    res.status(400).json({ error: "Failed to update todo" });
+    res.status(400).json({ error: "Failed to update Test" });
   }
 });
 

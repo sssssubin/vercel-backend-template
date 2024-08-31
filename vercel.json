@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/todos.js",
+      "src": "api/tests.js",
       "use": "@vercel/node"
     }
   ],
-  "routes": [{ "src": "/api/todos", "dest": "/api/todos.js" }]
+  "routes": [{ "src": "/api/tests", "dest": "/api/tests.js" }]
 }
