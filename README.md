@@ -14,7 +14,7 @@
 
 ### 배포 이슈 보기
 
-- [Vercel 배포 시 MongoDB 주소 설정과 CORS 이슈 해결 방법](https://sub-log.vercel.app/vercel-path-setup-issues)
+- [Vercel 배포 시 MongoDB 주소 설정과 CORS 이슈 해결 방법](https://sub-log.vercel.app/vercel-mongodb-cors-issues)
 - [Vercel 배포 시 경로 설정 이슈와 해결 방법](https://sub-log.vercel.app/vercel-path-setup-issues)
 
 ## 🔗 연동 링크
