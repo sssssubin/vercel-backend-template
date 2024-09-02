@@ -1,16 +1,21 @@
 # Vercel Backend Template
 
-이 프로젝트는 Vercel에 배포된 기본 Express.js 백엔드 템플릿을 포함하고 있습니다. Express를 사용하여 간단한 서버를 설정하고, MongoDB와 연동하여 데이터베이스 작업을 실습할 수 있습니다. 기본적인 API 기능을 구현하여 백엔드 개발의 기초를 학습하고 실습할 수 있는 예제입니다.
+이 프로젝트는 Vercel에 배포된 Express 기반의 백엔드 템플릿을 포함하고 있습니다. Express를 사용하여 간단한 서버를 설정하고, MongoDB와 연동하여 데이터베이스 작업을 실습할 수 있습니다. 기본적인 API 기능을 구현하여 백엔드 개발의 기초를 학습하고 실습할 수 있는 예제입니다.
 
 ## 📦 프로젝트 구성
 
-- **Express.js**: Node.js 서버 프레임워크
+- **Express**: Node.js 서버 프레임워크
 - **MongoDB**: 데이터베이스 연동 예제
 - **API Endpoints**: 기본적인 API 엔드포인트 예제
 
 ## 🚀 배포
 
 이 프로젝트는 Vercel에 배포되어 있습니다. [배포된 API 엔드포인트](https://vercel-backend-template.vercel.app/api/tests)를 통해 서버 기능을 테스트할 수 있습니다.
+
+### 배포 이슈 보기
+
+- [Vercel 배포 시 MongoDB 주소 설정과 CORS 이슈 해결 방법](https://sub-log.vercel.app/vercel-path-setup-issues)
+- [Vercel 배포 시 경로 설정 이슈와 해결 방법](https://sub-log.vercel.app/vercel-path-setup-issues)
 
 ## 🔗 연동 링크
 
@@ -19,7 +24,7 @@
 
 ## 📋 기능
 
-- Express.js 기반의 간단한 서버
+- Express 기반의 간단한 서버
 - MongoDB 연동 예제
 - RESTful API 엔드포인트
 
